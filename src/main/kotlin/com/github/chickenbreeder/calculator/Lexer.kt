@@ -35,6 +35,8 @@ class TokenIterator(
             '+' -> return OperatorToken(OperatorType.PLUS)
             '-' -> return OperatorToken(OperatorType.MINUS)
             '*' -> return OperatorToken(OperatorType.MUL)
+            '/' -> return OperatorToken(OperatorType.DIV)
+            '%' -> return OperatorToken(OperatorType.MOD)
             '(' -> return DelimiterToken(DelimiterType.LPAREN)
             ')' -> return DelimiterToken(DelimiterType.RPAREN)
             else -> {

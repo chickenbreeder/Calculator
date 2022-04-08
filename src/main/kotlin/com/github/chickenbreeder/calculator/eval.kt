@@ -13,6 +13,8 @@ fun eval(expression: Expression): Int {
             OperatorType.PLUS -> eval(expression.lhs) + eval(expression.rhs)
             OperatorType.MINUS -> eval(expression.lhs) - eval(expression.rhs)
             OperatorType.MUL -> eval(expression.lhs) * eval(expression.rhs)
+            OperatorType.DIV -> eval(expression.lhs) / eval(expression.rhs)
+            OperatorType.MOD -> eval(expression.lhs) % eval(expression.rhs)
         }
     }
 }

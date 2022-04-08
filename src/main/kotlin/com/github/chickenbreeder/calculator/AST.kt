@@ -9,6 +9,8 @@ enum class OperatorType(val precedence: Int, val associativity: Associativity) {
     PLUS(10, Associativity.LEFT),
     MINUS(10, Associativity.LEFT),
     MUL(20, Associativity.LEFT),
+    DIV(20, Associativity.LEFT),
+    MOD(20, Associativity.LEFT)
 }
 
 sealed class Expression

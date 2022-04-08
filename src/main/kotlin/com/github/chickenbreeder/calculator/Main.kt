@@ -10,5 +10,5 @@ fun main(args: Array<String>) {
 
     val parser = Parser(args[0])
     val expr = parser.parseExpression()
-    print(eval(expr))
+    println(eval(expr))
 }
